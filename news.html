@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>الأخبار والإعلانات - مركز التكوين المهني تيمقاد</title>
+
+  <style>
+    :root{--primary:#0a4f3c;--success:#198754;--bg:#f4f6f9;--card:#fff;--border:#e6e6e6;--muted:#666}
+    body{font-family:Arial,sans-serif;margin:0;background:var(--bg);color:#111}
+    a{text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:0 16px}
+
+    header{background:var(--primary);color:#fff}
+    .top{padding:14px 0}
+    .brand h1{margin:0;font-size:18px}
+    .brand p{margin:6px 0 0;font-size:13px;opacity:.95}
+    nav{display:flex;gap:14px;flex-wrap:wrap;align-items:center;padding:10px 0 14px;border-top:1px solid rgba(255,255,255,.25);margin-top:10px}
+    nav a{color:#fff;font-weight:bold;font-size:14px}
+    .cta{margin-right:auto;background:var(--success);color:#fff;padding:8px 12px;border-radius:8px}
+
+    main{padding:18px 0}
+    .pageTitle{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px;box-shadow:0 2px 10px rgba(0,0,0,.04)}
+    .pageTitle h2{margin:0;color:var(--primary)}
+    .pageTitle p{margin:8px 0 0;color:var(--muted);line-height:1.7}
+
+    .grid{display:grid;grid-template-columns:1.4fr .6fr;gap:12px;margin-top:12px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px;box-shadow:0 2px 10px rgba(0,0,0,.04)}
+    .card h3{margin:0 0 10px;color:var(--primary);font-size:16px}
+
+    .post{padding:12px 0;border-bottom:1px dashed #e9e9e9}
+    .post:last-child{border-bottom:none}
+    .post .meta{color:var(--muted);font-size:12px;margin-bottom:6px}
+    .post .title{font-weight:bold;color:#111}
+    .post .excerpt{color:var(--muted);margin-top:6px;line-height:1.7}
+
+    .tag{display:inline-block;background:#eef6f2;border:1px solid #d7eadf;color:#0a4f3c;
+      padding:4px 8px;border-radius:999px;font-size:12px;margin-left:6px}
+    .btn{display:inline-block;background:var(--success);color:#fff;padding:8px 12px;border-radius:8px;font-weight:bold}
+
+    ul{margin:0;padding:0 18px;line-height:1.9;color:#222}
+    footer{margin-top:18px;background:#222;color:#ccc;padding:14px 0}
+    footer a{color:#ddd}
+
+    @media (max-width: 980px){
+      .grid{grid-template-columns:1fr}
+      .cta{margin-right:0}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container top">
+    <div class="brand">
+      <h1>مركز التكوين المهني والتمهين – تيمقاد</h1>
+      <p>الإخوة الشهداء كريفة عمر وأحمد أبناء صالح | حي شليا – ولاية باتنة</p>
+    </div>
+
+    <nav>
+      <a href="index.html">الرئيسية</a>
+      <a href="specialties.html">التخصصات</a>
+      <a href="news.html">الأخبار</a>
+      <a href="contact.html">اتصل بنا</a>
+      <a class="cta" href="https://takwin.dz" target="_blank">سجّل الآن</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <div class="pageTitle">
+    <h2>الأخبار والإعلانات</h2>
+    <p>هنا يتم نشر الإعلانات الرسمية، المواعيد الهامة، وكل جديد يخص المركز. (يمكنك تعديل المحتوى بسهولة من GitHub.)</p>
+  </div>
+
+  <div class="grid">
+    <!-- قائمة الأخبار -->
+    <section class="card" aria-label="قائمة الأخبار">
+      <h3>آخر الأخبار</h3>
+
+      <article class="post">
+        <div class="meta">
+          <span class="tag">إعلان</span>
+          تاريخ النشر: 23 ديسمبر 2025
+        </div>
+        <div class="title">فتح التسجيلات عبر الرابط الخارجي</div>
+        <div class="excerpt">
+          يتم التسجيل حصريًا عبر رابط خارجي. يرجى تحضير الوثائق المطلوبة ومتابعة التحديثات عبر هذا القسم.
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="meta">
+          <span class="tag">تخصصات</span>
+          تاريخ النشر: 23 ديسمبر 2025
+        </div>
+        <div class="title">نشر قائمة التخصصات المتاحة</div>
+        <div class="excerpt">
+          تم نشر قائمة التخصصات مقسمة حسب أنماط التكوين. للاطلاع: صفحة التخصصات.
+          <br><br>
+          <a class="btn" href="specialties.html">عرض التخصصات</a>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="meta">
+          <span class="tag">قريبًا</span>
+          تاريخ النشر: —
+        </div>
+        <div class="title">الإعلانات والنتائج</div>
+        <div class="excerpt">
+          سيتم نشر المواعيد الهامة والنتائج فور توفرها.
+        </div>
+      </article>
+
+    </section>
+
+    <!-- عمود جانبي -->
+    <aside class="card" aria-label="روابط مهمة">
+      <h3>روابط مهمة</h3>
+      <ul>
+        <
