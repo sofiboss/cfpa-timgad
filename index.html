@@ -6,6 +6,56 @@
   <title>مركز التكوين المهني والتمهين تيمقاد</title>
 
   <style>
+    /* Slider (بدون صور) */
+.sliderWrap{margin-top:14px}
+.slider{
+  position:relative;
+  border-radius:14px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.25);
+  background:linear-gradient(135deg, rgba(255,255,255,.18), rgba(255,255,255,.06));
+}
+.slide{
+  display:none;
+  padding:22px;
+  min-height:170px;
+}
+.slide.active{display:block}
+.slide h2{margin:0 0 10px; font-size:22px}
+.slide p{margin:0; line-height:1.8; opacity:.95}
+.slide .actions{margin-top:14px; display:flex; gap:10px; flex-wrap:wrap}
+.btnA{
+  display:inline-block;
+  background:#198754;
+  color:#fff;
+  padding:9px 12px;
+  border-radius:8px;
+  font-weight:bold;
+}
+.btnB{
+  display:inline-block;
+  background:rgba(255,255,255,.14);
+  border:1px solid rgba(255,255,255,.25);
+  color:#fff;
+  padding:9px 12px;
+  border-radius:8px;
+  font-weight:bold;
+}
+.dots{
+  display:flex;
+  gap:8px;
+  padding:12px 16px;
+  border-top:1px solid rgba(255,255,255,.18);
+  background:rgba(0,0,0,.08);
+}
+.dot{
+  width:10px;height:10px;border-radius:999px;
+  background:rgba(255,255,255,.35);
+  border:1px solid rgba(255,255,255,.25);
+  cursor:pointer;
+}
+.dot.active{background:#fff}
+
     :root{
       --primary:#0b5ed7;
       --success:#198754;
