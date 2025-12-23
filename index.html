@@ -83,6 +83,28 @@
       border-radius:8px;
       text-decoration:none !important;
       font-weight:bold;
+      <script>
+(function(){
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  const dots = Array.from(document.querySelectorAll('.dot'));
+  if(!slides.length) return;
+
+  let i = 0;
+
+  function show(idx){
+    slides.forEach((s, k) => s.classList.toggle('active', k === idx));
+    dots.forEach((d, k) => d.classList.toggle('active', k === idx));
+    i = idx;
+  }
+
+  dots.forEach(d => {
+    d.addEventListener('click', () => show(parseInt(d.dataset.i, 10)));
+  });
+
+  setInterval(() => show((i + 1) % slides.length), 5000);
+})();
+</script>
+
     }
 
     .hero{padding:18px 0 22px;}
